@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.6 on win32)" generated="20210714 12:33:55.386" rpa="false" schemaversion="2">
+<suite id="s1" name="Covin" source="C:\Users\julie.g\PycharmProjects\covin\covin.robot">
+<test id="s1-t1" name="Open URL">
+<kw name="Load Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.cowin.gov.in/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210714 12:33:55.902" level="INFO">Opening browser 'chrome' to base url 'https://www.cowin.gov.in/'.</msg>
+<status status="PASS" starttime="20210714 12:33:55.902" endtime="20210714 12:34:05.924"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210714 12:34:05.924" endtime="20210714 12:34:06.043"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@title="Register / Sign In"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 12:34:06.044" level="INFO">Clicking element '//a[@title="Register / Sign In"]'.</msg>
+<status status="PASS" starttime="20210714 12:34:06.043" endtime="20210714 12:34:06.156"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>Co-WIN Application</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20210714 12:34:06.156" endtime="20210714 12:34:08.525"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:mat-input-0</arg>
+<arg>9769624840</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210714 12:34:08.526" level="INFO">Typing text '9769624840' into text field 'id:mat-input-0'.</msg>
+<status status="PASS" starttime="20210714 12:34:08.526" endtime="20210714 12:34:08.770"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210714 12:34:11.771" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210714 12:34:08.770" endtime="20210714 12:34:11.771"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class="covid-button-desktop ion-text-center"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 12:34:11.771" level="INFO">Clicking element '//div[@class="covid-button-desktop ion-text-center"]'.</msg>
+<status status="PASS" starttime="20210714 12:34:11.771" endtime="20210714 12:34:11.881"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>16s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210714 12:34:27.882" level="INFO">Slept 16 seconds</msg>
+<status status="PASS" starttime="20210714 12:34:11.882" endtime="20210714 12:34:27.882"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class="covid-button-desktop ion-text-center"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 12:34:27.883" level="INFO">Clicking element '//div[@class="covid-button-desktop ion-text-center"]'.</msg>
+<status status="PASS" starttime="20210714 12:34:27.882" endtime="20210714 12:34:27.945"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>7s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210714 12:34:34.946" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20210714 12:34:27.945" endtime="20210714 12:34:34.946"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//a[@aria-label="Add Member"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210714 12:34:35.109" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210714 12:34:34.946" endtime="20210714 12:34:35.109"/>
+</kw>
+<msg timestamp="20210714 12:34:35.109" level="FAIL">Element with locator '//a[@aria-label="Add Member"]' not found.</msg>
+<status status="FAIL" starttime="20210714 12:34:34.946" endtime="20210714 12:34:35.109"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//ion-row[3]//span[@class="m-lablename accessibility-plugin-ac"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.109" endtime="20210714 12:34:35.109"/>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>//ion-row[3]//span[@class="m-lablename accessibility-plugin-ac"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.109" endtime="20210714 12:34:35.109"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//ion-row[3]//span[@class="m-lablename accessibility-plugin-ac"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.109" endtime="20210714 12:34:35.109"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.109" endtime="20210714 12:34:35.109"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@data-checked="Search By District"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.109" endtime="20210714 12:34:35.109"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@data-checked="Search By District"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.109" endtime="20210714 12:34:35.109"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.109" endtime="20210714 12:34:35.109"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:mat-select-0</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.109" endtime="20210714 12:34:35.109"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:mat-select-0</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.109" endtime="20210714 12:34:35.109"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:mat-option-17</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.109" endtime="20210714 12:34:35.109"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.109" endtime="20210714 12:34:35.109"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:mat-select-2</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.125" endtime="20210714 12:34:35.125"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:mat-select-2</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.125" endtime="20210714 12:34:35.125"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>id:mat-option-47</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.125" endtime="20210714 12:34:35.125"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:mat-option-47</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.125" endtime="20210714 12:34:35.125"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.125" endtime="20210714 12:34:35.125"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//ion-button[@type="submit"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.125" endtime="20210714 12:34:35.125"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//ion-button[@type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210714 12:34:35.125" endtime="20210714 12:34:35.125"/>
+</kw>
+<status status="FAIL" starttime="20210714 12:33:55.902" endtime="20210714 12:34:35.125"/>
+</kw>
+<status status="FAIL" starttime="20210714 12:33:55.902" endtime="20210714 12:34:35.125">Element with locator '//a[@aria-label="Add Member"]' not found.</status>
+</test>
+<status status="FAIL" starttime="20210714 12:33:55.386" endtime="20210714 12:34:35.125"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Covin">Covin</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210714 12:33:55.433" level="ERROR">Error in file 'C:\Users\julie.g\PycharmProjects\covin\covin.robot' on line 2: Importing library 'extendedselenium2library' failed: ModuleNotFoundError: No module named 'extendedselenium2library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\julie.g\PycharmProjects\covin\venv\Scripts\robot.exe
+  C:\Users\julie.g\AppData\Local\Programs\Python\Python39\python39.zip
+  C:\Users\julie.g\AppData\Local\Programs\Python\Python39\DLLs
+  C:\Users\julie.g\AppData\Local\Programs\Python\Python39\lib
+  C:\Users\julie.g\AppData\Local\Programs\Python\Python39
+  c:\users\julie.g\pycharmprojects\covin\venv
+  c:\users\julie.g\pycharmprojects\covin\venv\lib\site-packages</msg>
+</errors>
+</robot>
